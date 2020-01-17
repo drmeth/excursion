@@ -1,0 +1,83 @@
+/*universal styles*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    font-size: 22px;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+/*big grid-container*/
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid: "heading" 10%
+          "phone-panel" auto
+          "travel-guide" auto
+          "coming-soon" auto
+          / 100%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*smaller-main grid-container*/
+
+.heading {
+    grid-area: heading;
+}
+
+.phone-panel {
+    grid-area: phone-panel;
+}
+
+.travel-guide {
+    grid-area: travel-guide;
+}
+
+.coming-soon {
+    grid-area: coming-soon;
+}
+
+/*phone panel layout and content*/
+
+video {
+    width: 35%;
+    height: auto;
+}
+
+/*travel guide layout and content*/
+
+div#phone-icon {
+    background-image: url("../pics/phone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
